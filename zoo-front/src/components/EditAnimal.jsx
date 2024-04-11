@@ -26,7 +26,7 @@ const EditAnimal = ({ showData, setEdit, setShow }) => {
   }, [showData])
   return (
     <div>
-      <h1>Create animal record</h1>
+      <h1>Edit animal record</h1>
 
       <form onSubmit={handleFormSubmit}>
         <label>Animal name</label>

@@ -48,7 +48,7 @@ app.delete("/zoo/:id", (req, res) => {
 });
 
 //UPDATE
-app.put("/zoo:id", (req, res) => {
+app.put("/zoo/:id", (req, res) => {
   const sqlQuery = `UPDATE zoo_museum SET name=?, type=?, weight=?, lives_in_zoo=? WHERE id=?`;
 
   conectionToDB.query(
